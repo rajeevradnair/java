@@ -1,0 +1,34 @@
+Collections:
+--------------------
+  Size:
+    No knowledge of size
+    Fixed size vs Extensible size
+  Ordering:
+    Ordered vs Unordered
+    Sorted vs Unsorted
+  Type of item getting stored:
+    Duplicates vs Unique
+    Key, Value
+    Null vs Non-null
+  Search:
+    Constant lookup
+    Fastest lookup
+
+Interface:
+--------------------
+  Collection
+    List -> ArrayList, LinkedList, ...
+    Set -> HashSet, TreeSet, LinkedHashSet, ...
+      SortedSet
+    Queue
+      Dequeue -> ArrayDeque, LinkedList, ...
+  Map -> HashMap, TreeMap, LinkedHashMap, ...
+    SortedMap
+
+Note: 
+  Set implementations internally use Map implementations. Therefore, you will see similar naming for the implementation classes like TreeSet/Map, HashSet/Map, LinkedHashSet/Map
+  All implementations implement Serializable, clone(), accept storing null objects and are not synchronized
+  Vector, Hashtable, Stack are legacy synchronized versions. Recommended not to use these due to performance issues
+    Vector -> use ArrayList instead
+    Hashtable -> use HashMap instead
+    Stack -> use ArrayDeque instead
